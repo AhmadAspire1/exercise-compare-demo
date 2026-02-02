@@ -115,7 +115,7 @@ if analyze:
 
         for tip in tips:
          st.info(tip)
-
+        """
         # Simple time-series display
         st.markdown("## Signals (for debugging / transparency)")
         sig_col1, sig_col2 = st.columns(2)
@@ -133,7 +133,7 @@ if analyze:
                 "tutorial_hip_y": tut["series"]["hip_y"],
                 "patient_hip_y": pat["series"]["hip_y"],
             })
-
+        """
         # Download JSON report
         report = {
             "tutorial": {
@@ -171,3 +171,4 @@ if analyze:
                 os.remove(pat_path)
         except Exception:
             pass
+
